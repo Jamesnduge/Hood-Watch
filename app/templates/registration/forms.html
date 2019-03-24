@@ -8,13 +8,20 @@
 {% bootstrap_javascript %}
 {% endblock %}
 <script src="{% static 'js/script.js'%}"></script>
-<div class="container" id="container">
+<div class="row">
+    <div class="col-md-4">
+            <div align="center" class= "jumbotron" style="position:fixed; background-color: rgba(0,0,0,0);">
+                    <img style="height: 200px; width: 200px;" src="https://tbncdn.freelogodesign.org/9f756032-f22f-4356-8bb6-ac7d9b176e16.png?1553437473401">
+            </div>
+    </div>
+<div class="col-md-8">
+<div style="margin-top: 10px;" class="container" id="container">
     <div class="form-container sign-up-container">
             <form id='signupForm' action="/accounts/register/" method="POST">
                 {% csrf_token %}
                 <h1>Create Account</h1>
                 <span>Use your email for registration</span>
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Username" />
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Password" />
                 <button type="submit">Sign Up</button>
@@ -49,5 +56,9 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+
+
 
 {% endblock %}
