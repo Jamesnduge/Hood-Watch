@@ -5,8 +5,9 @@ from django.conf.urls import url,include
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    url(r'^$', views.home, name='home'),
-    url(r'^signup/$', views.home, name='signup'),
+    url(r'^home/$', views.home, name='home'),
+    url(r'^$', views.signup, name='signup'),
+    url(r'^accounts/login/$', views.Login, name='login'),
 ]
 
 if settings.DEBUG:
