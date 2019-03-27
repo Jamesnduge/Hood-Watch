@@ -1,10 +1,10 @@
-# HOODAPP
+# HOOD-WATCH
 
 This is a web application built in python that keeps track of people in your neighbor-hood, the activities happening in your neighbor-hood and the type of business your neighbors have .
 
 ## Author name
 
-[James Mwangi Nduge]
+### James Mwangi Nduge
 
 
 
